@@ -1,0 +1,38 @@
+***// is the randomized queue empty?
+public boolean isEmpty()
+
+O(1), так как не зависит от числа элементов
+
+
+***// return the number of items on the randomized queue
+public int size()
+
+O(1), так как это просто обращение к переменной realNumberOfItems
+
+
+
+***// add the item
+public void enqueue(Item item)
+
+O(1) (амортизация), в худшем случае в момент удвоения - O(n)
+
+
+
+***// remove and return a random item
+public Item dequeue()
+
+O(1) (амортизация), в худшем случае в момент удвоения - O(n)
+
+
+***// return a random item (but do not remove it)
+public Item sample()
+
+O(1), так как это просто обращение к случайному элементу
+
+
+***// return an independent iterator over items in random order
+public Iterator iterator()
+
+O(n), так как это копирование посредством прохождения через весь массив
+
+
